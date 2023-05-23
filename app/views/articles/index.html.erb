@@ -1,0 +1,11 @@
+<h1>Wikinimous</h1>
+
+<ul>
+<% @articles.each do |article| %>
+<li><%= article.title %>
+<%# dot notation = .title pareil que l'interpolation %>
+<br>
+<%= "#{article[:content]}" %>
+</li>
+<% end %>
+</ul>
